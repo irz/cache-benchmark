@@ -10,11 +10,17 @@ Compile:
 g++ -O3 mmult.cpp -o mmult
 g++ -O3 generate.cpp -o generate
 ```
-Run:
+Generate input matrices:
 ```
 ./generate input.txt
-./mmult input.txt - non-blocked approach
-./mmult input.txt {blockSize} - blocked approach
+```
+Non-blocked matrix multiplication:
+```
+./mmult input.txt
+```
+Blocked multiplication:
+```
+./mmult input.txt {blockSize}
 ```
 
 Results example:
