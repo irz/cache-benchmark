@@ -3,14 +3,13 @@ Basic benchmark using cache-aware matrix multiplication.
 
 Multiply 2 square matrices using 'naive' or cache-aware blocked approach.
 Use generate to create sets of pairs of square matrices.
-Sizes are 400, 1000, 2000 by default.
 
 Compile:
 ```
 g++ -O3 mmult.cpp -o mmult
 g++ -O3 generate.cpp -o generate
 ```
-Generate input matrices:
+Generate input matrices (sizes are 400, 1000, 2000 by default):
 ```
 ./generate input.txt
 ```
@@ -23,7 +22,7 @@ Blocked multiplication:
 ./mmult input.txt {blockSize}
 ```
 
-Results example:
+Results example on x64:
 
 |Matrix size	|Naive exucution time, s	|Blocking execution time, s	|Speedup, x1|
 |---|---|---|---|
