@@ -22,7 +22,7 @@ Blocked multiplication:
 ./mmult input.txt {blockSize}
 ```
 
-Results example on x64:
+Results example on i5-6500K:
 
 |Matrix size	|Naive exucution time, s	|Blocking execution time, s	|Speedup, x1|
 |---|---|---|---|
