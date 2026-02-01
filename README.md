@@ -29,3 +29,11 @@ Results example on i5-6500K:
 |400	|0.073	|0.046	|1.59|
 |1000	|3.503	|0.75	|4.67|
 |2000	|92.7	|6.274	|14.78|
+
+On Xeon E5-2690 v4 (much bigger cache &rarr; better cache-locality &rarr; less gains):
+
+|Matrix size	|Naive exucution time, s	|Blocking execution time, s	|Speedup, x1|
+|---|---|---|---|
+|400	|0.064	|0.042	|1.52|
+|1000	|1.031	|0.685	|1.50|
+|2000	|22.05	|5.681	|3.88|
